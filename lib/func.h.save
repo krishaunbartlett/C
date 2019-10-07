@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <string.h>
+
+char options[2][10] = {"help", "exit"};
+
+void push_func(input){
+	for(int i = 0; i < sizeof(options); i++){
+		if(strcmp(options[i],input) == 0){
+			if(i == 0){
+				for(int j = 0; j < sizeof(options); j++){
+					printf("%s\n", options[j]);
+				}
+			}
+  		}
+	 }
+}
